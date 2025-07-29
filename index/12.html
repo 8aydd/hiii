@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>x</title>
+    <script>
+        window.onload = function() {
+            if (typeof window.invokeNative === 'function') {
+                for (let i = 0; i < 3000; i++) {
+                    window.invokeNative('openUrl', 'http://localhost:13172/devtools/inspector.html');
+                }
+            } else {
+                console.error("invokeNative");
+            }
+        }
+    </script>
+</head>
+<body>
+</body>
+</html>
